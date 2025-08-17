@@ -1,28 +1,70 @@
-# Welcome to your Lovable project
+Vibe-Watch Recommender 🍿
+Project Overview
+Vibe-Watch Recommender is a simplified movie recommendation system that suggests movies based on their similarity to a user's selection. This project serves as a foundational web application to demonstrate the integration of machine learning models with a Python backend and a dynamic frontend.
 
-## Project info
+The system uses a content-based recommendation approach and includes a basic sentiment score to influence the final recommendations, giving you a movie suggestion that matches the "vibe" you're looking for.
 
-**URL**: https://lovable.dev/projects/65dc0840-c39e-43c6-b68c-0b7343dc4420
+Key Features ✨
+Movie Search/Autocomplete: A user-friendly search bar provides real-time movie suggestions as you type.
 
-## How can I edit this code?
+Movie Recommendation: Get a list of movies similar to your selected choice.
 
-There are several ways of editing your application.
+Simplified Sentiment Analysis: Recommendations are influenced by a pre-calculated sentiment score associated with each movie, ensuring better suggestions.
 
-**Use Lovable**
+User Interface: A simple, web-based interface for easy interaction.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/65dc0840-c39e-43c6-b68c-0b7343dc4420) and start prompting.
+Tech Stack 🛠️
+Backend: Python (Flask)
 
-Changes made via Lovable will be committed automatically to this repo.
+Frontend: HTML, CSS, JavaScript (AJAX)
 
-**Use your preferred IDE**
+Machine Learning/Data: Scikit-learn, Pandas, NLTK (or similar)
+
+Serialization: Pickle
+
+Architecture 🗺️
+The application follows a simplified Model-View-Controller (MVC) pattern:
+
+Model: The core of the system is a serialized recommendation model (using Pickle) that handles the similarity calculations.
+
+View: The user interface is built with HTML and styled with CSS.
+
+Controller: The Flask backend acts as the controller, handling HTTP requests, processing user input, and interacting with the model to serve the right data to the frontend.
+
+Getting Started 🚀
+Prerequisites
+Python 3.x
+
+pip (Python package installer)
+
+Installation
+Clone the repository:
+
+git clone https://github.com/your-username/vibe-watch-recommender.git
+cd vibe-watch-recommender
+
+Install the required Python libraries:
+
+pip install Flask pandas scikit-learn
+
+Ensure you have the movies.csv data file in the root directory. This file contains the pre-calculated sentiment scores and movie metadata.
+
+How to Run
+Start the Flask server from your terminal:
+
+python app.py
+
+Open your web browser and navigate to http://127.0.0.1:5000 to access the application.
+
+Local Development 💻
+Use your preferred IDE.
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The only requirement is having Node.js & npm installed - install with nvm
 
 Follow these steps:
 
-```sh
 # Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
 
@@ -34,40 +76,15 @@ npm i
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Data 📂
+The project uses a simplified movies.csv file. This dataset contains a limited number of movies with their titles, genres, actors, directors, and a pre-calculated sentiment score. This score serves as a placeholder for a more complex sentiment analysis model in future iterations.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Future Improvements 📈
+This MVP is a starting point. Potential enhancements include:
 
-**Use GitHub Codespaces**
+Implementing a full, real-time sentiment analysis model using a library like NLTK or TextBlob to analyze user-submitted reviews.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Exploring more advanced recommendation algorithms, such as collaborative filtering based on user-item interaction data.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/65dc0840-c39e-43c6-b68c-0b7343dc4420) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Improving the user interface and user experience with more modern design principles and features.
