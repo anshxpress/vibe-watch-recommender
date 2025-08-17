@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				cinema: {
+					bg: 'hsl(var(--cinema-bg))',
+					card: 'hsl(var(--cinema-card))',
+					accent: 'hsl(var(--cinema-accent))',
+					'accent-hover': 'hsl(var(--cinema-accent-hover))',
+					gold: 'hsl(var(--cinema-gold))',
+					green: 'hsl(var(--cinema-green))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
