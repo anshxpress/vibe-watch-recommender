@@ -1,5 +1,5 @@
-Vibe-Watch Recommender: A Movie Recommendation System 🍿
-Project Overview
+## Vibe-Watch Recommender: A Movie Recommendation System 🍿
+#### Project Overview
 Vibe-Watch Recommender is a web-based application designed to provide movie suggestions to users. This project serves as a practical demonstration of integrating a machine learning model with a Python backend and a dynamic, responsive frontend.
 
 The system employs a content-based recommendation algorithm that calculates movie similarity based on metadata such as genre, actors, and director. It also incorporates a pre-calculated sentiment score for each movie, offering a unique approach to suggestions that align with a desired "vibe."
